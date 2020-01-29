@@ -1,9 +1,11 @@
 <h1>Your Text Analysis</h1>
 
-<h2>Number of Words: </h2>
+<h2>Your Sentence: <%= @instance_one.text %></h2>
 
-<h2>Vowels: </h2>
+<h2>Number of Words: <%= @instance_one.count_of_words %></h2>
 
-<h2>Consonants: </h2>
+<h2>Vowels: <%= @instance_one.count_of_vowels %></h2>
 
-<h2>Most Common Letter: _____ used _____ times</h2>
+<h2>Consonants: <%= @instance_one.count_of_consonants %></h2>
+
+<h2>Most Common Letter: <%= @instance_one.most_used_letter_letter %>, used <%= @instance_one.most_used_letter_num %> times</h2>
